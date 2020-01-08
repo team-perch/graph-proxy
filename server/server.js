@@ -1,9 +1,10 @@
 /* eslint-disable no-console */
+require('newrelic');
 const express = require('express');
 const proxy = require('http-proxy-middleware');
 
 const options = {
-  target: 'http://localhost:3002', // target host
+  target: 'http://54.67.110.125:3002/', // target host
   changeOrigin: true, // needed for virtual hosted sites
   ws: true, // proxy websockets
   pathRewrite: {
