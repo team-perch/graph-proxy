@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.use('/loaderio-3997f353b9c45854ee789481c23c028c.txt', express.static(path.join(__dirname, '../public/loaderio-3997f353b9c45854ee789481c23c028c.txt')));
+app.use('/loaderio-47cd774ac6c1ede74ef41ec65df5fe65.txt', express.static(path.join(__dirname, '../public/loaderio-47cd774ac6c1ede74ef41ec65df5fe65.txt')));
 
 const optionsEstimates = {
   target: 'http://54.67.110.125:3002/', // target host
