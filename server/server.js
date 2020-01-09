@@ -11,14 +11,12 @@ const options = {
   target: 'http://54.67.110.125:3002/', // target host
   changeOrigin: true, // needed for virtual hosted sites
   ws: true, // proxy websockets
-  pathRewrite: {
-    '^/api': '/api/estimates', // rewrite path
-  },
+  // pathRewrite: {
+  //   '^/api': '/api/estimates', // rewrite path
+  // },
 };
-
 const apiProxy = proxy(options);
-
-app.use('/api', apiProxy);
+app.use(apiProxy);
 
 
 const port = 3000;
