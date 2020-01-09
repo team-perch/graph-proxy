@@ -7,6 +7,8 @@ const path = require('path');
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 
+app.use('/loaderio-3997f353b9c45854ee789481c23c028c.txt', express.static(path.join(__dirname, '../public/loaderio-3997f353b9c45854ee789481c23c028c.txt')));
+
 const options = {
   target: 'http://54.67.110.125:3002/', // target host
   changeOrigin: true, // needed for virtual hosted sites
@@ -16,7 +18,7 @@ const options = {
   // },
 };
 const apiProxy = proxy(options);
-app.use(apiProxy);
+app.use('/api/estimates', apiProxy);
 
 
 const port = 3000;
