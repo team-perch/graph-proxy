@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use('/loaderio-47cd774ac6c1ede74ef41ec65df5fe65.txt', express.static(path.join(__dirname, '../public/loaderio-47cd774ac6c1ede74ef41ec65df5fe65.txt')));
 
 const optionsEstimates = {
-  target: 'http://54.67.110.125:3002/', // target host
+  target: 'http://54.153.106.164/', // target host
   changeOrigin: true, // needed for virtual hosted sites
   ws: true, // proxy websockets
   // pathRewrite: {
